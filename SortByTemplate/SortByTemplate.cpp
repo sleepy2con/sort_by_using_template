@@ -9,7 +9,9 @@ int main()
     vector<int> tempArr;
     mySort<int>::get_an_randrom_array(tempArr,100,1, 10);
     mySort<int>::print(tempArr);
-    mySort<int>::mergeSort(tempArr);
+    //mySort<int>::mergeSort(tempArr);
+    mySort<int> sortObj;
+    sortObj.quickSort(tempArr);
     mySort<int>::print(tempArr);
 
     
